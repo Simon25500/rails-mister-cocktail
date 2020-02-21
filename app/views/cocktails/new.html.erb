@@ -5,6 +5,8 @@
     <%= simple_form_for @cocktails do |f| %>
     <%= f.label :name, 'Cocktail name'%>
     <%= f.text_field :name %>
+    <%= f.input :photo, as: :file %>
     <%= f.submit class: 'btn btn-primary'%>
 </div>
+
 <% end %>

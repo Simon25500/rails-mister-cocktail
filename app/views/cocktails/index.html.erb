@@ -3,11 +3,13 @@
     <%= link_to 'add a cocktail', new_cocktail_path ,class: "btn btn-primary add-link" %>
 </div>
 
-<div class="containe">
+<div class="containe" >
     <% @cocktails.each do |cocktail| %>
-    <div class="card">
+    <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo.key,width: 400, height: 300, crop: :fill %>')" >
+
         <h3><%= cocktail.name %></h3>
         <%= link_to 'more info', cocktail_path(cocktail.id), class: "more-info" %>
     </div>
     <% end %>
 </div>
+  

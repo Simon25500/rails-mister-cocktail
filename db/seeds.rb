@@ -16,7 +16,3 @@ parsing["drinks"].each do |x|
     Ingredient.new(name: x["strIngredient1"]).save!
 end
 
-Cocktail.destroy_all
-%w[The data can then be loaded with].each do |x| 
-    Cocktail.new(name: x).save!
-end
