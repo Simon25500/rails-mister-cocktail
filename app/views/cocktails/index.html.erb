@@ -1,0 +1,13 @@
+<div class="nav-bar">
+    <h1>Nos Cocktail</h1>
+    <%= link_to 'add a cocktail', new_cocktail_path ,class: "btn btn-primary add-link" %>
+</div>
+
+<div class="containe">
+    <% @cocktails.each do |cocktail| %>
+    <div class="card">
+        <h3><%= cocktail.name %></h3>
+        <%= link_to 'more info', cocktail_path(cocktail.id), class: "more-info" %>
+    </div>
+    <% end %>
+</div>

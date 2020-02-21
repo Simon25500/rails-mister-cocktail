@@ -1,0 +1,10 @@
+<div class="nav-add">
+    <h1>Add a cocktail</h1>
+</div>
+<div class="form">
+    <%= simple_form_for @cocktails do |f| %>
+    <%= f.label :name, 'Cocktail name'%>
+    <%= f.text_field :name %>
+    <%= f.submit class: 'btn btn-primary'%>
+</div>
+<% end %>

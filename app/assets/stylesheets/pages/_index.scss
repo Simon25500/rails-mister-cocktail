@@ -1,2 +1,82 @@
 // Import page-specific CSS files here.
 @import "home";
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+
+    .add-link{
+        display: flex;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+}
+
+.containe{
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200px;
+        border-radius: 8px;
+        box-shadow: 0 0 2px rgba(0,0,0, 0.8);
+    }
+
+    .card h3 {
+        margin: 8px;;
+    }
+
+    .card .more-info{
+        margin: 8px;
+        text-decoration: none;
+        color: blue;
+    }
+}
+
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-size: 24px;
+}
+
+.foot{
+    margin: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-add{
+    text-align: center;
+    padding: 20px 50px;
+    h1{
+        font-size: 50px;
+    }
+}
+
+.form{
+    margin: 0 auto;
+    width: 300px;
+    
+    input{
+        margin: 20px;
+    }
+    
+    form{
+        text-align: center;
+    }
+
+    label{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,12 @@
+<div class="nav-add">
+    <h1>Add a Ingredient</h1>
+</div> 
+
+<div class="form">
+    <%= simple_form_for([@cocktails, @doses]) do |f| %>
+    <%= f.association :ingredient, include_blank: false %>
+    <%= f.label :description, 'add a descrition' %>
+    <%= f.text_field :description %>
+    <%= f.submit %>
+    <% end %>
+</div>
