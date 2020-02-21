@@ -3,7 +3,7 @@
 </div> 
 
 <div class="form">
-    <%= simple_form_for([@cocktails, @doses]) do |f| %>
+    <%= simple_form_for([@cocktail, @dose]) do |f| %>
     <%= f.association :ingredient, include_blank: false %>
     <%= f.label :description, 'add a descrition' %>
     <%= f.text_field :description %>
